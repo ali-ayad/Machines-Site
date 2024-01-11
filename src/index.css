@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Medium";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./Fonts/ArbFONTS-PNU-Light.ttf") format("truetype");
+}
+
 body{
   background-color: hsla(36, 73%, 46%, 1);
 }

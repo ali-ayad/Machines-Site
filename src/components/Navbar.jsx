@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
-
+const FontStyle = {
+  fontFamily: 'Medium',
+};
 
 const Navbar = () => {
   const [nav , setNav] = useState(false)
@@ -13,7 +15,7 @@ const Navbar = () => {
   return (
    
 
-    <div className='flex justify-between items-center h-24  mt-[40px] max-w-[1060px] m-auto px-4'>
+    <div style={FontStyle} className='flex justify-between items-center h-24  mt-[40px] max-w-[1060px] m-auto px-4 font-bold'>
 
       <div onClick={handleNav} className='block md:hidden'>
         {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>} 
@@ -30,7 +32,7 @@ const Navbar = () => {
         <il className="text-[#FFB950] p-1 bg-white rounded text-center ">  الرئيسية </il>
       </ul>
 
-      <h1 className='text-white text-3xl pl-4'>Logo</h1>
+      <h1 className='text-white text-3xl  font-[900] w-[74px] h-[41px]'>Logo</h1>
 
       <div  className={!nav? 'fixed right-0 top-0 w-[60%] h-full bg-[#783b10] p-2 ease-in-out duration-500 block md:hidden': 'fixed right-[-200px]'}  >
 
