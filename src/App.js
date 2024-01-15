@@ -1,3 +1,5 @@
+import { ContactUs } from "./components/ContactUs";
+import { Goals } from "./components/Goals";
 import { Hero } from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { Services } from "./components/Services";
@@ -10,7 +12,7 @@ const divStyle = {
 
 function App() {
   return (
-    <div style={divStyle}>
+    <div style={divStyle} className="scroll-smooth">
    <Navbar></Navbar>
    <Hero main="أتشعرُ أنّك مرهقٌ جداً يا فتى؟ متعبٌ من كلّ شيءٍ، وساخطٌ على كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ"
          title ="شركة برمجية" />
@@ -18,7 +20,9 @@ function App() {
     main="أتشعرُ أنّك مرهقٌ جداً يا فتى؟ متعبٌ من كلّ شيءٍ، وساخطٌ على كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك مرهقٌ جداً يا فتى؟ متعبٌ من كلّ شيءٍ، وساخطٌ على كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك مرهقٌ جداً يا فتى؟ متعبٌ من كلّ شيءٍ، وساخطٌ على كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ"
     ></WhoWeAre>     
     <Services></Services>
-
+    <Goals></Goals>
+    <ContactUs></ContactUs>
+    
     </div>
   );
 }

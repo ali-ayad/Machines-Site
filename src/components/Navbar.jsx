@@ -15,7 +15,7 @@ const Navbar = () => {
     <div  className='flex justify-between items-center h-24 mt-1 max-w-[1220px] m-auto px-4 font-bold md:mt-[40px] '>
 
       <div onClick={handleNav} className=' block md:hidden'>
-        {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>} 
+        {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>} 
       
       </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
       <h1 className='text-white text-3xl  font-[900] w-[74px] h-[41px]'>Logo</h1>
 
-      <div  className={!nav? ' z-20 fixed right-0 top-0 w-[60%] h-full bg-[#783b10] p-2 ease-in-out duration-500 block md:hidden': 'fixed right-[-200px]'}  >
+      <div  className={nav? ' z-20 fixed right-0 top-0 w-[60%] h-full bg-[#783b10] p-2 ease-in-out duration-500 block md:hidden': 'fixed right-[-200px]'}  >
 
      
 
