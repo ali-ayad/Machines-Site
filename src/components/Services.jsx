@@ -3,7 +3,7 @@ import press from '../assets/bc8b3a0b53940b1c335e0218b9676641.png'
 
 export const Services = () => {
   return (
-    <div className='bg-white w-full py-4 '>
+    <div className='bg-white w-full py-4 ' id='services'>
       <div className=' px-20 mx-auto grid md:grid-cols-2'>
 
         <div className='max-w-[660px] '>

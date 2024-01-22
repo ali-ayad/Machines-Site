@@ -26,9 +26,9 @@ export const ContactUs = () => {
 
 
   return (
-    <div  >
+    <div id='contactus' >
    <MyStyledComponent>
-    <div className='w-full h-[100vh] '>
+    <div className='w-full'>
 
         <form className='bg-white max-w-[380px] h-[452px] rounded-lg  relative  mx-auto   top-80  md:left-80   '>
           <h1 className='text-center text-[26.82px] font-bold text-[#CC8720]  p-10'>اتصل بنا</h1>

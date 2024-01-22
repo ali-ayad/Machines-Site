@@ -6,11 +6,12 @@ import machine from '../assets/f92b3ca3b356c0f681b50679f3137e8d.png'
 export const Hero = (props) => {
 
   return (
-    <div  className='w-full px-4 py-16'>
+    <div  className='w-full px-4 py-16' id='home'>
 
       <div className='max-w-[1200] mx-auto grid   md:grid-cols-2'>
-        <div className='max-w-[960px]' >
+        <div className='max-w-[960px]' > 
           <img  src={machine} alt=" auto machine" />
+         
         </div>
 
         <div className='text-white max-w-[600px] pt-6  pr-2  ' >

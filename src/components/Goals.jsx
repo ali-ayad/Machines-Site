@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Goals = () => {
   return (
-    <div className='w-full bg-white py-14' id='goals'>
+    <div className='w-full bg-white py-20  ' id='goals'>
       <div className='mx-auto'>
         <div className=' text-center'>
           <h1 className='text-[#635E50] text-[20px] font-[600] md:text-[30px] '>الاهداف</h1>
