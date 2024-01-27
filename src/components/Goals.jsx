@@ -69,7 +69,7 @@ export const Goals = () => {
                 <div className='mt-8 text-[18px] font-[600]'>{item.title}</div>
               </div>
               <div className='text-right p-2 m-3 font-[600] text-[14px] text-[#36342F] lg:text-[16px]'>
-                <p>{item.description}</p>
+                <p>{item.description}</p> 
               </div>
             </div>
           ))}
