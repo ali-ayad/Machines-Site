@@ -6,19 +6,17 @@ export const WhoWeAre = (props) => {
     <div className='bg-[#FAF0D4] w-full py-24 pl-[100px] ' id='whoweare'>
       <div className='  mx-auto grid md:grid-cols-2 md:px-[70px]'>
 
-      <div className='text-right min-w-[220px] max-w-[500px] text-[18px] font-[400] p-4 pt-6 md:text-[25px] md:pt-20'>
-        <h1 className='text-[#E2B22A]'>من نحن</h1>
-        <p>{props.main}</p>
+        <div className='text-right min-w-[220px] max-w-[500px] text-[18px] font-[400] p-4 pt-6 md:text-[25px] md:pt-20'>
+          <h1 className='text-[#E2B22A]'>من نحن</h1>
+          <p>{props.main}</p>
+        </div>
+
+        <div className='  max-w-[900px] pt-20'>
+          <img className='transform -scale-x-100 ' src={machine} alt="" />
+        </div>
       </div>
 
-      <div className='  max-w-[900px] pt-20'>
-        <img  className='transform -scale-x-100 ' src={machine} alt="" />
-      </div>
 
-      
-</div>
-
-      
-      </div>
+    </div>
   )
 }

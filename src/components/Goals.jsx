@@ -43,7 +43,7 @@ const goalItems = [
     title: 'ant design',
     description: 'على كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك',
   },
-  // Add more goal items as needed
+
 ];
 
 export const Goals = () => {

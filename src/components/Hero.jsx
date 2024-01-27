@@ -1,7 +1,7 @@
 import React from 'react'
 import machine from '../assets/f92b3ca3b356c0f681b50679f3137e8d.png'
 
-// className='transform -scale-x-100'
+
 
 export const Hero = (props) => {
 

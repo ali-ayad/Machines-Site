@@ -1,6 +1,38 @@
 import React from 'react'
 import press from '../assets/bc8b3a0b53940b1c335e0218b9676641.png'
 
+const servicesItems = [
+  {
+    id : 1,
+    title:'اهم الخدمات المقدمة',
+    description:'اعلى كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك'
+
+  },
+
+  {
+    id : 2,
+    title:'اهم الخدمات المقدمة',
+    description:'اعلى كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك'
+
+  },
+
+  {
+    id : 3,
+    title:'اهم الخدمات المقدمة',
+    description:'اعلى كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك'
+
+  },
+
+  {
+    id : 4,
+    title:'اهم الخدمات المقدمة',
+    description:'اعلى كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك'
+
+  },
+]
+
+
+
 export const Services = () => {
   return (
     <div className='bg-white w-full py-4 ' id='services'>
@@ -19,29 +51,17 @@ export const Services = () => {
 
 
           <div className='max-w-[480px] mx-auto my-10  text-right grid lg:grid-cols-2 gap-1 md:my-10'>
-            <div className='text-[17px] w-[230px] h-[200px] border-orange-300 border shadow-xl shadow-orange-100  rounded-md px-2 m-1'>
 
-              <h1 className='pb-1 text-[30px] font-[700] '>1</h1>
-              {/* <div className='w-2 h-1 bg-[#E2B22A] ml-36'></div> */}
-              <h2 className='text-[#E2B22A] font-[700]'>اهم الخدمات المقدمة</h2>
-              <p className=' font-[400]'>اعلى كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك</p>
-            </div>
-            <div className='text-[17px] w-[230px] h-[200px] border-orange-300 border shadow-xl shadow-orange-100  rounded-md px-2 m-1'>
-              <h1 className='pb-1 text-[30px] font-[700]'>2</h1>
-              <h2 className='text-[#E2B22A] font-[700]'>اهم الخدمات المقدمة</h2>
-              <p className=' font-[400]'>اعلى كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك</p>
-            </div>
-            <div className='text-[17px] w-[230px] h-[200px] border-orange-300 border shadow-xl shadow-orange-100  rounded-md px-2 m-1'>
-              <h1 className='pb-1 text-[30px] font-[700]'>3</h1>
-              <h2 className='text-[#E2B22A] font-[700]'>اهم الخدمات المقدمة</h2>
-              <p className=' font-[400]'>اعلى كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك</p>
-            </div>
-            <div className='text-[17px] w-[230px] h-[200px] border-orange-300 border shadow-xl shadow-orange-100  rounded-md px-2 m-1 '>
-              <h1 className='pb-1 text-[30px] font-[700]'>4</h1>
-              <h2 className='text-[#E2B22A] font-[700]'>اهم الخدمات المقدمة</h2>
-              <p className=' font-[400]'>اعلى كلّ شيءْ، تبدُو لِي كذلك، وعيناكَ الضيّقتانِ، تزيدانِ من حدّتكْ، كلّما اكتملتْ تلكَ العقدةُ الّتي تعلُو وجهكْ أتشعرُ أنّك</p>
-            </div>
 
+             {servicesItems.map(item => (
+
+              <div key={item.id} className='text-[17px] w-[230px] h-[200px] border-orange-300 border shadow-xl shadow-orange-100  rounded-md px-2 m-1'>
+              <h1 className='pb-1 text-[30px] font-[700] '>{item.id}</h1>
+              <h2 className='text-[#E2B22A] font-[700]'> {item.title}  </h2>
+              <p className=' font-[400]'> {item.description} </p>
+            </div>
+             ))}
+             
           </div>
         </div>
 
