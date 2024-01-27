@@ -9,7 +9,7 @@ const Navbar = () => {
   
 
   const handleNav = () => setNav(!nav)
-  const Closewindow = () => setNav(!nav)
+  
 
   return (
    
@@ -32,7 +32,7 @@ const Navbar = () => {
       
       <Link to='contactus' offset={100} > <button className='text-white bg-[#FAC53A] rounded-lg w-[125px] h-[34.13px] hidden md:block '> اتصل بنا </button></Link>
 
-      <div onClick={handleNav} className=' fixed right-2  block  md:hidden'>
+      <div onClick={handleNav} className=' fixed z-50 right-2  block  md:hidden'>
         {nav ? <></> : <AiOutlineMenu size={20}/>} 
       
       </div>
@@ -40,18 +40,18 @@ const Navbar = () => {
 
 
       <div  className={nav? ' z-20 fixed right-0 top-0 w-[60%] h-full bg-[#783b10] p-2 ease-in-out duration-500 block md:hidden': 'fixed right-[-200px]'}  >
-      <div onClick={handleNav} className=' block md:hidden'>
+      <div onClick={handleNav} className=' p-2 block md:hidden'>
         {nav ? <AiOutlineClose size={20}/> : <></>} 
       
       </div>
 
-        <ul className="pt-[50px] ">
-        <il>  <Link to='nav' spy={true} smooth={true}  duration={500}  className="text-[#FFB950] p-4 cursor-pointer block  hover:bg-white rounded rounded text-right" onClick={handleNav}>  الرئيسية </Link></il> 
+        <ul className="pt-[20px] ">
+        <il>  <Link to='nav' spy={true} smooth={true}  duration={500}  className="text-[#FFB950] p-4 cursor-pointer block  hover:bg-white  rounded text-right" onClick={handleNav}>  الرئيسية </Link></il> 
         <il>  <Link to='whoweare' spy={true} smooth={true}  duration={500} className="text-[#FFB950] p-4 cursor-pointer block hover:bg-white rounded  text-right" onClick={handleNav}>  من نحن  </Link></il>
         <il>  <Link to='services'spy={true} smooth={true}  duration={500} className="text-[#FFB950] p-4 cursor-pointer block  hover:bg-white  rounded text-right" onClick={handleNav}>  الخدمات </Link></il> 
         <il>  <Link to='goals' spy={true} smooth={true}  duration={500} className="text-[#FFB950] p-4 mb-8 cursor-pointer block  hover:bg-white  rounded text-right" onClick={handleNav}>  الاهداف </Link></il> 
        
-         <Link to='contactus'> <li className=' flex justify-center'> <button className='text-white bg-[#dcaa2d] rounded-lg w-[145px] h-[44.13px] '>اتصل بنا</button></li></Link>
+         <Link to='contactus'> <li className=' flex justify-center'> <button className='text-white bg-[#dcaa2d] rounded-lg w-[145px] h-[44.13px] ' onClick={handleNav}>اتصل بنا</button></li></Link>
 
         </ul>
       </div>
