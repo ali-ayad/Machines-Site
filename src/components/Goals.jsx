@@ -43,10 +43,10 @@ export const Goals = () => {
           <h1 className='text-[#E2B22A] text-[20px] font-[700] md:text-[30px]'>اهم الأهداف المقدمة</h1>
         </div>
 
-        <div className='max-w-[1000px] my-10 py-4 pt-4 mx-auto grid md:grid-cols-3 gap-4'>
+        <div className='max-w-[1000px] py-4 pt-4 mx-auto grid md:grid-cols-3 gap-4'>
           
           {goalItems.map(item => (
-            <div key={item.id} className='w-full max-w-[332px] h-[190px] bg-[#FAF0D4] rounded-md m-1 mx-auto'>
+            <div key={item.id} className='w-full max-w-[332px] h-[190px] bg-[#FAF0D4] rounded-md  mx-auto'>
               <div className='flex'>
                 <div className={`w-[68px] h-[68px] rounded-full bg-[#E2B22A] mt-4 ml-4 mr-2`}>
                   <svg className='fill-current text-white m-1' role="img" viewBox="-2 -2 28 30" xmlns="http://www.w3.org/2000/svg">
